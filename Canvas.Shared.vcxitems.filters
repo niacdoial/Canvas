@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Canvas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Graph.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\GUI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Point.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Simple_window.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\ststpstdlib.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Window.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WIN32_HEAD.h">
+      <Filter>W32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h">
+      <Filter>W32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\STD_HEAD.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\BASE.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\fltk_base.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Graph.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\GUI.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Window.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\fltk_base.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="W32">
+      <UniqueIdentifier>{79a56619-4599-4733-aa5c-68019aef8ec4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

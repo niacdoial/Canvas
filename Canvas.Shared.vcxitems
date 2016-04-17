@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{71e306fc-dc5a-4ce8-8e92-b289f16cc96a}</ItemsProjectGuid>
+    <ItemsRootNamespace>Canvas</ItemsRootNamespace>
+    <ItemsProjectName>Canvas.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+    <ExpressionBlendVersion>12.0.60617.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Canvas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\BASE.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\fltk_base.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Graph.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\GUI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Point.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Simple_window.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\STD_HEAD.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\ststpstdlib.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Window.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WIN32_HEAD.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\fltk_base.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Graph.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\GUI.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Window.cpp">
+      <PrecompiledHeaderFile>ststpstdlib.h.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>
